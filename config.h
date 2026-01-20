@@ -1,4 +1,4 @@
-#include <<X11/XF86keysym.h>
+#include <X11/XF86keysym.h>
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */

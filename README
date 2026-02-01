@@ -2,6 +2,14 @@ dwm - dynamic window manager
 ============================
 dwm is an extremely fast, small, and dynamic window manager for X.
 
+dependencies for my fork
+=========================
+I am using following utilities in my dwm config:
+1: pulseaudo - for sound/mic
+2: brightnessctl - for controlling screen backlight
+3: flameshot - for taking screenshots
+
+Also i am using am using the "x11proto-core-dev" package, since i need definitions for the physical keys to create my mappings
 
 Requirements
 ------------

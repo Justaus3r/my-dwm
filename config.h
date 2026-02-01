@@ -68,6 +68,7 @@ static const char *mutevol[]    = { "/usr/bin/pactl",   "set-sink-mute",   "0", 
 static const char *brupcmd[] = { "/usr/bin/brightnessctl", "set", "10%+", NULL };
 static const char *brdowncmd[] = { "/usr/bin/brightnessctl", "set", "10%-", NULL };
 static const char *micmute[] = {"/usr/bin/pactl", "set-source-mute", "1", "toggle", NULL};
+static const char *prnsc[] = {"/usr/bin/flameshot", "gui", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -108,8 +109,9 @@ static const Key keys[] = {
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
 	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
     { 0,                       XF86XK_AudioMicMute, spawn, {.v =  micmute }},
-    { 0, XF86XK_MonBrightnessUp, spawn, {.v = brupcmd} },
-    { 0, XF86XK_MonBrightnessDown, spawn, {.v = brdowncmd} }
+    { 0,                       XF86XK_MonBrightnessUp, spawn, {.v = brupcmd} },
+    { 0,                       XF86XK_MonBrightnessDown, spawn, {.v = brdowncmd} },
+    { 0,                       XK_Print, spawn, {.v = prnsc } }
     };
 
 /* button definitions */
